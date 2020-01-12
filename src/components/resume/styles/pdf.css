@@ -105,35 +105,4 @@
   ol li:nth-child(3) {
     border-top: none;
   }
-
-  /*
-  ul dl {
-    margin: 0;
-    padding: 0.3em 0 0;
-
-    dt {
-      font-size: 122%;
-      font-weight: normal;
-      margin: 0 0 0.75em;
-    }
-
-    dd {
-      padding: 0 4em 0 0;
-    }
-  }
-
-  dl {
-    margin: 0.7em 0 0;
-
-    strong {
-      float: right;
-      margin-top: -2em;
-    }
-
-    em {
-      font-size: 130%;
-      font-style: normal;
-    }
-  }
-  */
 }
