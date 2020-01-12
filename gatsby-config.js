@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Jason Kurian`,
+    description: `Welcome to my portfolio, enjoy your stay!`,
     author: `@JaKXz92`,
   },
   plugins: [
     `gatsby-plugin-theme-ui`,
+    `gatsby-plugin-mdx`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

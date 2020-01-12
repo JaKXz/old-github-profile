@@ -1,21 +1,29 @@
 import React from "react";
-import { Link } from "gatsby";
-import { Styled } from "theme-ui";
-import Layout from "../components/layout";
-import Image from "../components/image";
+import { Box, Flex, Heading, Text } from "@theme-ui/components";
 import SEO from "../components/seo";
+import Layout from "../components/layout";
 
 export default function IndexPage() {
   return (
     <Layout>
       <SEO title="Home" />
-      <Styled.h1>Hi people</Styled.h1>
-      <Styled.p>Welcome to your new Gatsby site.</Styled.p>
-      <Styled.p>Now go build something great.</Styled.p>
-      <Styled.div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </Styled.div>
-      <Link to="/page-2/">Go to page 2</Link>
+      <Flex
+        sx={{
+          flexDirection: "column",
+          height: "100vh",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Box>
+          <Heading as="h1" sx={{ fontSize: 8 }}>
+            Jason Kurian
+          </Heading>
+        </Box>
+        <Box>
+          <Text sx={{ fontSize: 4 }}>@jakxz</Text>
+        </Box>
+      </Flex>
     </Layout>
   );
 }
