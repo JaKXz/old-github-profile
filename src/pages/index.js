@@ -14,18 +14,20 @@ export default function IndexPage() {
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
-              height: `calc(97vh - ${Object.values(sizes)
+              height: `calc(100vh - ${Object.values(sizes)
                 .map(v => `${v.height}px`)
                 .join(" - ")})`,
             }}
           >
             <Box>
-              <Heading as="h1" sx={{ fontSize: [6, 7, 8] }}>
-                Jason Kurian
-              </Heading>
+              <Text>
+                Why should <em>you</em> hire
+              </Text>
             </Box>
             <Box>
-              <Text sx={{ fontSize: 4 }}>@jakxz</Text>
+              <Heading as="h1" sx={{ fontSize: [6, 7, 8] }}>
+                Jason Kurian?
+              </Heading>
             </Box>
           </Flex>
         </>
