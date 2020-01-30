@@ -1,5 +1,4 @@
 import React, { useCallback, useState } from "react";
-import PropTypes from "prop-types";
 import { Container } from "@theme-ui/components";
 import Header from "./header";
 import "./layout.css";
@@ -16,11 +15,20 @@ export default function Layout({ children }) {
       setSizes(sizes => ({ ...sizes, footer: node.getBoundingClientRect() }));
     }
   }, []);
+  const Children = ({ ...props }) =>
+    React.Children.map(children, child =>
+      React.cloneElement(child, {
+        ...props,
+        sizes,
+      }),
+    );
 
   return (
     <Container px="1.0875rem">
       <Header headerRef={headerRef} />
-      <main>{children(sizes)}</main>
+      <main>
+        <Children />
+      </main>
       <footer ref={footerRef}>
         © {new Date().getFullYear()}, Built with
         {` `}
@@ -35,7 +43,3 @@ export default function Layout({ children }) {
     </Container>
   );
 }
-
-Layout.propTypes = {
-  children: PropTypes.func.isRequired,
-};
