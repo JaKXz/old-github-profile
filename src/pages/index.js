@@ -25,7 +25,10 @@ export default function IndexPage() {
               </Text>
             </Box>
             <Box>
-              <Heading as="h1" sx={{ fontSize: [6, 7, 8] }}>
+              <Heading
+                as="h1"
+                sx={{ fontSize: [6, 7, 8], textAlign: "center" }}
+              >
                 Jason Kurian?
               </Heading>
             </Box>
