@@ -6,11 +6,9 @@ export default function Header({ headerRef }) {
   return (
     <header ref={headerRef}>
       <Flex
+        mx="auto"
         sx={{
           flexDirection: "row-reverse",
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `1.45rem 1.0875rem`,
         }}
       >
         <Text as={Link} to="/resume">
