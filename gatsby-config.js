@@ -5,6 +5,7 @@ module.exports = {
     author: `@JaKXz92`,
   },
   plugins: [
+    `gatsby-plugin-page-transitions`,
     `gatsby-plugin-theme-ui`,
     {
       resolve: `gatsby-plugin-mdx`,
