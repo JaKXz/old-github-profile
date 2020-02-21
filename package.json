@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "Jason Kurian <jasonk92@gmail.com>",
   "dependencies": {
-    "@mdx-js/mdx": "^1.5.5",
+    "@mdx-js/mdx": "^1.5.6",
     "@mdx-js/react": "^1.5.5",
     "@theme-ui/components": "^0.3.1",
     "@theme-ui/preset-base": "^0.3.0",
