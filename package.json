@@ -10,7 +10,7 @@
     "@theme-ui/components": "^0.3.1",
     "@theme-ui/preset-base": "^0.3.0",
     "gatsby": "^2.20.18",
-    "gatsby-image": "^2.3.2",
+    "gatsby-image": "^2.4.2",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-mdx": "^1.1.7",
     "gatsby-plugin-offline": "^3.1.2",
